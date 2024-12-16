@@ -1,0 +1,7 @@
+services:
+  vscode:
+    image: mcr.microsoft.com/devcontainers/dotnet:8.0
+    volumes:
+      - ..:/workspace:cached
+    environment:
+      - DOTNET_ENVIRONMENT=Development

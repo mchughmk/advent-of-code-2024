@@ -1,0 +1,27 @@
+{
+    "name": "aoc-2024",
+    "dockerComposeFile": ["docker-compose.yml"],
+    "service": "vscode",
+    "runServices": ["vscode"],
+    "workspaceFolder": "/workspace",
+    "shutdownAction": "stopCompose",
+    "overrideCommand": true,
+    "features": {
+        "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-dotnettools.csdevkit",
+                "ms-azuretools.vscode-docker",
+                "eamodio.gitlens",
+                "vscode-icons-team.vscode-icons",
+                "esbenp.prettier-vscode",
+                "editorconfig.editorco",
+                "mhutchie.git-graph",
+                "usernamehw.errorlens"
+            ]
+        }
+    },
+    "remoteUser": "vscode"
+  }
